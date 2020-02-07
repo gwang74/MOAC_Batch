@@ -1,0 +1,31 @@
+{
+  "name": "moac_batch",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "start": "node js/batch.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gwang74/MOAC_Batch"
+  },
+  "keywords": [
+    "MOAC"
+  ],
+  "author": "gwang",
+  "license": "",
+  "dependencies": {
+    "big-number": "^2.0.0",
+    "bignumber.js": "^9.0.0",
+    "chain3": "^0.1.22",
+    "dateformat": "^2.0.0",
+    "ethjs-util": "^0.1.6",
+    "node-schedule": "^1.3.2",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.6"
+  },
+  "devDependencies": {
+    "babel-register": "^6.26.0"
+  }
+}

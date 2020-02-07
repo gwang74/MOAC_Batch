@@ -1,0 +1,9 @@
+{
+    "baseaddr": "",
+    "privatekey": "",
+    "vnodeVia": "0x181f542d0637e8d5130cf0077ce0c22be47f00f7",
+    "subChain": "0x36aa307a4157653eafa47f327b11963ccf174ed4",
+    "dappAddr": "0x1652a76c60a73467109527dfa06d306ddb01aa89",
+    "vnodeUri": "http://39.99.178.42:8545",
+    "scsUri": "http://39.99.178.42:8547/rpc"
+}
