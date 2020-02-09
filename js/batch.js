@@ -25,9 +25,12 @@ function sendRawbatch() {
     var transactions = require('../config/transaction');
     var batch = utils.chain3.createBatch();
     for (let i = 0, length = transactions.length; i < length; i++) {
-        batch.add(utils.chain3.mc.sendRawTransaction.request(transactions[i]));
+        batch.add(utils.chain3.mc.sendRawTransaction.request(transactions[i]), (error, hash) => {
+            console.log(error, hash)
+        });
         if (new BigNumber(i).mod(200) == 0 || i == transactions.length - 1) {
             batch.execute();
+            batch = utils.chain3.createBatch();
         }
     }
 }
